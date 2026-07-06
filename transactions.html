@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="e">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+
+  <!-- bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+
+  <!-- css -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body class="container mt-3">
+  <header>
+    <h2>Últimos Movimientos</h2>
+  </header>
+
+  <main>
+
+    <ul id="movementsList" class="list-group">
+      <!-- la deje basia ya que se agregaran movimientos desde JavaScript -->
+    </ul>
+
+    <div class="acciones">
+      <a onclick="redirigir('menu.html', 'menú')" class="btn btn-secondary mt-3">Volver al Menú Principal</a>
+    </div>
+
+  </main>
+
+  <!-- bootstrap js -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+    crossorigin="anonymous"></script>
+
+  <!-- JQuery -->
+  <script src="https://code.jquery.com/jquery-4.0.0.min.js"></script>
+
+  <!-- jS (ahora individual) -->
+  <script src="java/transactions.js"></script>
+
+</body>
+
+</html>

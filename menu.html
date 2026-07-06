@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <!-- bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+
+  <!-- css -->
+  <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body class="menu container">
+  <header>
+    <h2>Menú principal</h2>
+  </header>
+
+  <div id="alert-container"></div>
+
+  <main id="menu-page">
+
+    <div class="card card-menu">
+      <div class="card-body">
+        <h5 class="card-title">Dinero en cuenta</h5>
+        <p id="saldo-total" class="card-text">$60000</p>
+      </div>
+    </div>
+
+    <div class="acciones mt-3">
+      <a onclick="redirigir('index.html', 'login')" class="btn btn-secondary">← Volver</a>
+      <a onclick="redirigir('deposit.html', 'depositar')" class="btn btn-primary">Depositar</a>
+      <a onclick="redirigir('sendmoney.html', 'transferir')" class="btn btn-primary">Transferir</a>
+      <a onclick="redirigir('transactions.html', 'últimos movimientos')" class="btn btn-primary">Últimos movimientos</a>
+    </div>
+
+  </main>
+</body>
+
+<!-- bootstrap js -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+  integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+
+<!-- JQuery -->
+<script src="https://code.jquery.com/jquery-4.0.0.min.js"></script>
+
+<!-- js (menu.js) -->
+<script src="java/menu.js"></script>
+
+</html>
