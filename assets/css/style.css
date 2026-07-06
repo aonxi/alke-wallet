@@ -1,0 +1,115 @@
+/* ALL */
+
+* {
+  font-family: "Inter", sans-serif;
+}
+
+body {
+  background: #f5f7fb;
+}
+
+.display-format {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.acciones {
+  display: flex;
+  gap: 20px;
+}
+
+.form-control {
+  height: 48px;
+}
+
+.btn {
+  height: 46px;
+  border-radius: 10px;
+}
+
+/* ======== TARJETAS Y MODALES ======== */
+
+.card {
+  border: none;
+  border-radius: 18px;
+  width: 100%;
+
+  margin: 15px 0;
+}
+
+.card-body {
+  padding: 30px;
+}
+
+.modal-content {
+  border-radius: 18px;
+}
+
+
+/* ======== LOGIN ======== */
+
+.login-body {
+  background: #f5f7fb;
+}
+
+.login-card .card-body {
+  padding: 40px;
+}
+
+.login-card h2 {
+  font-weight: 700;
+}
+
+.login-card p {
+  font-size: .95rem;
+}
+
+#alert-bootstrap {
+  margin-bottom: 15px;
+}
+
+/* menu html */
+
+/* otra forma de separa contenido pero en 
+ forma de erencia  */
+
+.menu>* {
+  margin-top: 15px;
+}
+
+/* deposit html */
+
+#deposit {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+/* send money html */
+
+#sendmoney {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.contact-info {
+  display: flex;
+  gap: 5px;
+  flex-wrap: wrap;
+}
+
+/* transactions html */
+
+.list-group {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.contact-selected{
+  border: 2px solid #0066ff;
+  background-color: #ebf3ff;
+}
+
