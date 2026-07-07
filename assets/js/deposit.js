@@ -65,7 +65,7 @@ $("#deposit").submit(function (e) {
   //modificar valor de salddo
   let nuevoSaldo = saldo + monto;
   localStorage.setItem("saldo", nuevoSaldo);
-  $("#saldo-total").text("$" + saldo)
+  $("#saldo-total").text("$" + nuevoSaldo);
   $("#deposit-info").text(
     `Monto depositado: $${monto}`
   );
