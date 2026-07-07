@@ -76,6 +76,48 @@ body {
   font-weight: 700;
 }
 
+/* ======== SEND MONEY ======= */
+
+.contact-list {
+  max-height: 350px;
+  overflow-y: auto;
+}
+
+.contact-info {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  flex-wrap: wrap;
+  cursor: pointer;
+  transition: .25s;
+}
+
+.contact-info:hover {
+  background: #f8f9fa;
+}
+
+.contact-selected {
+  border: 2px solid #0d6efd;
+  background: #eef5ff;
+}
+
+.contact-name {
+  font-weight: 600;
+}
+
+.contact-details {
+  color: #6c757d;
+  font-size: .9rem;
+}
+
+.contact-list::-webkit-scrollbar {
+  width: 8px;
+}
+
+.contact-list::-webkit-scrollbar-thumb {
+  background: #cfd4da;
+  border-radius: 10px;
+}
 
 /* deposit html */
 
@@ -85,19 +127,6 @@ body {
   gap: 15px;
 }
 
-/* send money html */
-
-#sendmoney {
-  display: flex;
-  flex-direction: column;
-  gap: 15px;
-}
-
-.contact-info {
-  display: flex;
-  gap: 5px;
-  flex-wrap: wrap;
-}
 
 /* transactions html */
 
