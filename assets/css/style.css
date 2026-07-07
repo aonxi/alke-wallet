@@ -119,25 +119,61 @@ body {
   border-radius: 10px;
 }
 
-/* deposit html */
+/* ======== TRANSACTIONS ======= */
 
-#deposit {
+#movements {
+  max-width: 750px;
+}
+
+.movement-list {
+
   display: flex;
   flex-direction: column;
-  gap: 15px;
+  gap: 12px;
+
+  max-height: 420px;
+  overflow-y: auto;
+
 }
 
+.movement-item {
 
-/* transactions html */
-
-.list-group {
   display: flex;
-  flex-direction: column;
-  gap: 15px;
+
+  justify-content: space-between;
+
+  align-items: center;
+
+  padding: 18px;
+
+  border: none;
+
+  border-radius: 15px;
+
+  background: #fff;
+
+  box-shadow: 0 2px 8px rgba(0, 0, 0, .05);
+
+  transition: .25s;
+
 }
 
-.contact-selected{
-  border: 2px solid #0066ff;
-  background-color: #ebf3ff;
+.movement-item:hover {
+
+  background: #eef5ff;
+
 }
 
+.movement-list::-webkit-scrollbar {
+
+  width: 8px;
+
+}
+
+.movement-list::-webkit-scrollbar-thumb {
+
+  background: #cfd4da;
+
+  border-radius: 10px;
+
+}
