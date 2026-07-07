@@ -38,7 +38,7 @@ $("#deposit").submit(function (e) {
   }
 
 
-  //guardar los depositos echo
+  //guardar los depositos echo aparte
 
   let depositList = JSON.parse(localStorage.getItem("deposits")) || [];
 
@@ -50,6 +50,17 @@ $("#deposit").submit(function (e) {
   depositList.push(newDeposit);
 
   localStorage.setItem("deposits", JSON.stringify(depositList));
+
+  // guardar en almacenamiento general
+
+  let movementHistory = JSON.parse(localStorage.getItem("movementHistory")) || [];
+
+  movementHistory.push(newDeposit);
+
+  localStorage.setItem(
+    "movementHistory",
+    JSON.stringify(movementHistory)
+  );
 
   //modificar valor de salddo
   let nuevoSaldo = saldo + monto;
@@ -67,9 +78,13 @@ $("#deposit").submit(function (e) {
 })
 
 function redirigir(destino, nombre) {
-  
-  $("#alert-container").text(`
-    redirigiendo a: ${nombre}
+
+  $("#alert-container").html(`
+    <div class="card-body text-center">
+
+      <h6 class="text-secondary">redirigiendo a: ${nombre}</h6>
+
+    </div>
     `);
 
   setTimeout(() => {
