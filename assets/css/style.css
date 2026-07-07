@@ -69,14 +69,13 @@ body {
   margin-bottom: 15px;
 }
 
-/* menu html */
+/* ======== MENU ======== */
 
-/* otra forma de separa contenido pero en 
- forma de erencia  */
-
-.menu>* {
-  margin-top: 15px;
+#saldo-total {
+  font-size: 3rem;
+  font-weight: 700;
 }
+
 
 /* deposit html */
 
